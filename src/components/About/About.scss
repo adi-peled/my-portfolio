@@ -1,1 +1,21 @@
 @import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
+
+.about {
+  padding-top: 60px;
+  justify-content: space-around;
+  color: $second-color;
+  .profile-img {
+    width: 600px;
+    height: 800px;
+    margin: 15px;
+  }
+  .info {
+    width: 600px;
+    line-height: 2;
+    margin: 15px;
+  }
+  .skills {
+    justify-content: space-between;
+  }
+}

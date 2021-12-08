@@ -11,7 +11,7 @@
             "MongoDB",
             "Socket.io"
         ],
-        "url": "https://rcrentals.herokuapp.com",
+        "websiteUrl": "https://rcrentals.herokuapp.com",
         "imgsCount": 3
     },
     {
@@ -26,7 +26,7 @@
             "MongoDB",
             "Nodemailer"
         ],
-        "url": "https://adi-clothing-store.herokuapp.com",
+        "websiteUrl": "https://adi-clothing-store.herokuapp.com",
         "imgsCount": 3
     },
     {
@@ -41,7 +41,7 @@
             "MongoDB",
             "Socket.io"
         ],
-        "url": "https://jukebox-ma.herokuapp.com/",
+        "websiteUrl": "https://jukebox-ma.herokuapp.com/",
         "imgsCount": 4
     },
     {
@@ -56,7 +56,7 @@
             "firestore",
             "firebase"
         ],
-        "url": "https://app.finjanschool.co.il",
+        "websiteUrl": "https://app.finjanschool.co.il",
         "imgsCount": 4
     }
 ]

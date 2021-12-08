@@ -8,8 +8,9 @@
       :autoplayTimeout="3000"
       paginationColor="#AAA"
       :speed="1000"
+      :paginationEnabled="false"
     >
-      <slide v-for="idx in project.imgsCount" :key="idx">
+      <slide v-for="idx in 3" :key="idx">
         <div class="preview-front">
           <img
             class="proj-img"
@@ -25,7 +26,7 @@
                 {{ skill }}
               </div>
             </div>
-            <button class="btn-open" @click="openProject(project.url)">
+            <button class="btn-open" @click="openProject(project.websiteUrl)">
               go website
             </button>
           </div>
@@ -51,9 +52,6 @@ export default {
         opacity: 0,
       },
     };
-  },
-  created() {
-    console.log(this.project);
   },
   methods: {
     onEnter() {

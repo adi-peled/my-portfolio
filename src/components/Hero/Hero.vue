@@ -33,7 +33,7 @@ export default {
         `Using advanced web technologies such as Node.js, Vue.js, React and Angular`,
       ],
       'text',
-      ['#ff0083']
+      ['#1593ff']
     );
     this.letterAnimation();
   },

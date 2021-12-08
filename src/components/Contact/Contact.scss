@@ -1,1 +1,24 @@
 @import '../../scss/abstracts/variables';
+
+.contact {
+  .icons {
+    justify-content: center;
+    .icon-container {
+      display: flex;
+      background-color: $third-color;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $second-color;
+      }
+    }
+
+    .icon {
+      fill: $first-color;
+      font-size: 35px;
+    }
+  }
+}
