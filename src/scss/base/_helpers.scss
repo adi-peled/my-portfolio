@@ -1,0 +1,107 @@
+.grid {
+  display: grid;
+}
+
+.flex,
+.wrap,
+.col {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.capi {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.align-self {
+  align-self: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  position: fixed;
+  backdrop-filter: brightness(0.5);
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  z-index: 100;
+  width: 40rem;
+  border: 2px solid #000;
+  padding: 1.6rem 3.2rem 2.4rem;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  @include absCenter;
+  position: fixed;
+}
+
+.brightness {
+  // filter: blur(1px);
+  filter: brightness(50%);
+}
+
+.title {
+  font-size: 35px;
+  color: $second-color;
+  text-transform: capitalize;
+  font-family: roboto-mono;
+  font-weight: 700;
+}

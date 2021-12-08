@@ -1,0 +1,28 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animation';
+@import 'base/helpers';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 40px;
+  outline: none;
+}
+body::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}

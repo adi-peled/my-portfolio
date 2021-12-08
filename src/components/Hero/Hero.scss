@@ -1,0 +1,76 @@
+@import '../../scss/abstracts/variables';
+.hero {
+  height: 50vh;
+  padding-top: 50px;
+  .title {
+    padding: 40px;
+  }
+
+  //animation-1
+  .word {
+    font-family: 'Anton', sans-serif;
+    perspective: 1000px;
+  }
+
+  .word span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 100px;
+    user-select: none;
+    line-height: 0.8;
+  }
+
+  .word span:nth-child(1).active,
+  .word span:nth-child(9).active {
+    animation: balance 1.5s ease-out;
+    transform-origin: bottom left;
+  }
+
+  .word span:nth-child(2).active {
+    animation: shrinkjump 1s ease-in-out;
+    transform-origin: bottom center;
+  }
+
+  .word span:nth-child(3).active {
+    animation: falling 2s ease-out;
+    transform-origin: bottom center;
+  }
+
+  .word span:nth-child(5).active {
+    animation: rotate 1s ease-out;
+  }
+
+  .word span:nth-child(6).active {
+    animation: toplong 1.5s linear;
+  }
+  .word span:nth-child(7).active {
+    animation: moveInLeft 1.5s linear;
+  }
+
+  .word span:nth-child(8).active {
+    animation: fade 1.5s linear;
+  }
+
+  /* Other styles */
+
+  .fixed {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  //close animation-1
+  //animation-2
+  .console-container {
+    font-size: 2em;
+    text-align: center;
+  }
+  .console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+  }
+  //close animation-2
+}
