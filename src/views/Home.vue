@@ -16,6 +16,8 @@ import About from '../components/About/About.vue';
 import Contact from '../components/Contact/Contact.vue';
 export default {
   name: 'Home',
+  created() {},
+  methods: {},
   components: {
     Header,
     Hero,

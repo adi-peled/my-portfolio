@@ -15,7 +15,22 @@
     line-height: 2;
     margin: 15px;
   }
+  a {
+    color: $third-color;
+    &:hover {
+      font-weight: bold;
+    }
+  }
   .skills {
     justify-content: space-between;
+    ul {
+      li {
+        padding: 10px;
+        width: 185px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 }

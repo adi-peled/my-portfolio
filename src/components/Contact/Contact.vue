@@ -26,12 +26,12 @@
 
 <script>
 import './Contact.scss';
-import Linkedin from '../../assets/icons/linkedin.svg';
-import Facebook from '../../assets/icons/facebook.svg';
-import Whatsapp from '../../assets/icons/whatsapp.svg';
-import Phone from '../../assets/icons/phone.svg';
-import Email from '../../assets/icons/email.svg';
-import Github from '../../assets/icons/github.svg';
+import Linkedin from '../../assets/social-icons/linkedin.svg';
+import Facebook from '../../assets/social-icons/facebook.svg';
+import Whatsapp from '../../assets/social-icons/whatsapp.svg';
+import Phone from '../../assets/social-icons/phone.svg';
+import Email from '../../assets/social-icons/email.svg';
+import Github from '../../assets/social-icons/github.svg';
 export default {
   name: 'Contact',
   methods: {

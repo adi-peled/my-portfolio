@@ -25,16 +25,7 @@ import './Hero.scss';
 export default {
   name: 'Hero',
   mounted() {
-    this.consoleText(
-      [
-        `Full Stack Web Developer `,
-        `Experienced with building
-      single-page-applications`,
-        `Using advanced web technologies such as Node.js, Vue.js, React and Angular`,
-      ],
-      'text',
-      ['#1593ff']
-    );
+    this.consoleText([`Full Stack Web Developer `], 'text', ['#1593ff']);
     this.letterAnimation();
   },
   methods: {
