@@ -1,6 +1,5 @@
 <template>
   <section class="home">
-    <Header />
     <Hero />
     <ProjectsList />
     <About />
@@ -9,6 +8,7 @@
 </template>
 
 <script>
+import './Home.scss';
 import Header from '../components/Header/Header.vue';
 import Hero from '../components/Hero/Hero.vue';
 import ProjectsList from '../components/ProjectsList/ProjectsList.vue';

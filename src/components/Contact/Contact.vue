@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2 class="title">Contact</h2>
     <div class="icons flex">
       <div class="icon-container" @click="iconClicked('Linkedin')">

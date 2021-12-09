@@ -1,16 +1,24 @@
 @import '../../scss/abstracts/variables';
 
 .header {
-  padding: 20px;
+  padding: 0 20px;
   background-color: $third-color;
   position: fixed;
   z-index: 5;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: roboto-mono;
+  font-weight: 700;
+  color: $second-color;
   a {
     padding: 15px;
     text-transform: capitalize;
-    color: $second-color;
-    font-family: roboto-mono;
-    font-weight: 700;
+    color: inherit;
+  }
+  .logo {
+    path {
+      fill: $second-color;
+    }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="about flex">
+  <section class="about flex" id="about">
     <img class="profile-img" src="../../assets/profile.jpeg" />
     <div class="info">
       <div class="desc">
