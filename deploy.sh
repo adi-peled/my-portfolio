@@ -9,6 +9,6 @@ git add -A
 
 git commit -m "deploy"
 
-git push -f  https://github.com/adi-peled/portfolio.git master:gh-pages
+git push -f  https://github.com/adi-peled/portfolio.git main:gh-pages
 
 cd -
