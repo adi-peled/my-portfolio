@@ -1,5 +1,5 @@
 <template>
-  <section class="hero" id="home">
+  <section class="hero" id="hero">
     <!-- <p>need bgc</p> -->
     <div class="title word">
       <span>A</span>

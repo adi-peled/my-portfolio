@@ -2,14 +2,18 @@
   <header class="header flex">
     <!-- <img src="../../assets/ADIPELED.png" alt="" /> -->
     <div class="relative pointer">
-      <Logo class="logo" @click="moveHome" />
+      <Logo class="logo" />
       <a class="moveHome" href="#home"></a>
     </div>
     <ul class="flex">
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">contact</a>
+      <a href="#hero" :class="{ active: currSection === 'hero' }">Home</a>
+      <a href="#projects" :class="{ active: currSection === 'projects' }"
+        >Projects</a
+      >
+      <a href="#about" :class="{ active: currSection === 'about' }">About</a>
+      <a href="#contact" :class="{ active: currSection === 'contact' }"
+        >contact</a
+      >
     </ul>
   </header>
 </template>
@@ -19,14 +23,14 @@ import './Header.scss';
 import Logo from '../../assets/logo.svg';
 export default {
   name: 'Header',
-  created() {
-    addEventListener('scroll', this.onScroll);
+  props: {
+    currSection: {
+      type: String,
+      default: '',
+    },
   },
   mounted() {},
-  methods: {
-    onScroll() {},
-    moveHome() {},
-  },
+  methods: {},
   components: {
     Logo,
   },
