@@ -15,10 +15,20 @@
     padding: 15px;
     text-transform: capitalize;
     color: inherit;
+    transition: 0.6s;
+    &:hover {
+      color: $first-color;
+    }
   }
   .logo {
     path {
       fill: $second-color;
     }
+  }
+
+  .moveHome {
+    left: 0;
+    width: 100%;
+    position: absolute;
   }
 }

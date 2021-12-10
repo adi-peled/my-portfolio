@@ -66,8 +66,8 @@
           </ul>
         </div>
         <ul>
-          <li>phone:0556699584</li>
-          <li>email:adipeled499@gmail.com</li>
+          <li>Phone:0556699584</li>
+          <li>Email:adipeled499@gmail.com</li>
         </ul>
       </div>
     </div>

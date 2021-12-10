@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" @scroll="onScroll">
     <Hero />
     <ProjectsList />
     <About />
@@ -17,7 +17,11 @@ import Contact from '../components/Contact/Contact.vue';
 export default {
   name: 'Home',
   created() {},
-  methods: {},
+  methods: {
+    onScroll() {
+      console.log('scc');
+    },
+  },
   components: {
     Header,
     Hero,
