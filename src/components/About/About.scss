@@ -33,4 +33,15 @@
       }
     }
   }
+
+  .advantages {
+    padding: 20px 0 80px 0;
+    .adv-container {
+      margin: 10px;
+      .adv {
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+  }
 }

@@ -1,22 +1,31 @@
 <template>
   <section class="about" id="about">
     <h2 class="title">About</h2>
-    <div class="advantages">
-      <div class="advantage">
-        <span class="bold">Responsive-</span> layouts fits on any device, phone,
-        tablet or desktop.
+    <div class="advantages flex">
+      <div class="adv-container">
+        <div class="subtitle">Responsive</div>
+        <div class="adv">
+          layouts fits on any device, phone, tablet or desktop.
+        </div>
       </div>
-      <div class="advantage">
-        <span class="bold">Latest Technologies-</span> using the most modren
-        techs languages like JavaScript(ES6) SASS etc...
+      <div class="adv-container">
+        <div class="subtitle">Latest Technologies</div>
+        <div class="adv">
+          using the most modren techs languages like JavaScript(ES6) SASS etc...
+        </div>
       </div>
-      <div class="advantage">
-        <span class="bold"> Fast&Organized-</span> using state management, best
-        practices , MVC, single page application
+      <div class="adv-container">
+        <div class="subtitle">Fast&Organized</div>
+        <div class="adv">
+          using state management, best practices , MVC, single page application
+        </div>
       </div>
-      <div class="advantage">
-        <span class="bold"> End To End-</span> building full scale web apps,
-        frontend and backend, using sql or no-sql date bases
+      <div class="adv-container">
+        <div class="subtitle">End To End</div>
+        <div class="adv">
+          building full scale web apps, frontend and backend, using sql or
+          no-sql date bases
+        </div>
       </div>
     </div>
     <div class="flex">

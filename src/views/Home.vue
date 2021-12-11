@@ -6,13 +6,15 @@
         <Hero />
       </Observer>
       <Observer @on-change="onChange($event, 'projects')" class="test-lazy">
-        <ProjectsList />
+        <ProjectsList
+          :class="{ enteringAnimation: currSection === 'projects' }"
+        />
       </Observer>
       <Observer @on-change="onChange($event, 'about')" class="test-lazy">
-        <About />
+        <About :class="{ enteringAnimation: currSection === 'about' }" />
       </Observer>
       <Observer @on-change="onChange($event, 'contact')" class="test-lazy">
-        <Contact />
+        <Contact :class="{ enteringAnimation: currSection === 'contact' }" />
       </Observer>
     </main>
   </div>
@@ -28,7 +30,9 @@ import Contact from '../components/Contact/Contact.vue';
 import Observer from 'vue-intersection-observer';
 export default {
   name: 'Home',
-  created() {},
+  created() {
+    this.currSection = this.$route.hash.split('#')[1];
+  },
   data() {
     return {
       currSection: 'hero',

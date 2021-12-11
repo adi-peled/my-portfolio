@@ -30,7 +30,11 @@ export default {
     },
   },
   mounted() {},
-  methods: {},
+  methods: {
+    changedSection(section) {
+      this.$emit('changedSection', section);
+    },
+  },
   components: {
     Logo,
   },
