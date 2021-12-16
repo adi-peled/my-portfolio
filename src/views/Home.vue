@@ -46,7 +46,6 @@ export default {
     onChange(entry, section) {
       if (entry.isIntersecting) {
         if (section !== this.currSection) {
-          this.$router.push(`/#${section}`);
           this.currSection = section;
         }
       }
