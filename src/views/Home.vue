@@ -1,17 +1,21 @@
 <template>
   <div class="home">
     <Header :currSection="currSection" />
+    <Observer @on-change="onChange($event, 'hero')" class="test-lazy">
+      <Hero />
+    </Observer>
     <main class="main">
-      <Observer @on-change="onChange($event, 'hero')" class="test-lazy">
-        <Hero />
-      </Observer>
       <Observer @on-change="onChange($event, 'projects')" class="test-lazy">
         <ProjectsList
           :class="{ enteringAnimation: currSection === 'projects' }"
         />
       </Observer>
       <Observer @on-change="onChange($event, 'about')" class="test-lazy">
-        <About :class="{ enteringAnimation: currSection === 'about' }" />
+        <About
+          :class="{
+            enteringAnimation: currSection === 'about',
+          }"
+        />
       </Observer>
       <Observer @on-change="onChange($event, 'contact')" class="test-lazy">
         <Contact :class="{ enteringAnimation: currSection === 'contact' }" />

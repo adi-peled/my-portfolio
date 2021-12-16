@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adi-peled.github.io/my-portfolio",
+  "homepage": "",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",

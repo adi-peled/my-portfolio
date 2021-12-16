@@ -11,38 +11,61 @@
       <div class="adv-container">
         <div class="subtitle">Latest Technologies</div>
         <div class="adv">
-          using the most modren techs languages like JavaScript(ES6) SASS etc...
+          using the most modren techs languages like JavaScript(ES6) SASS ,
+          popular frameworks React Angular and Vue
         </div>
       </div>
       <div class="adv-container">
         <div class="subtitle">Fast&Organized</div>
         <div class="adv">
-          using state management, best practices , MVC, single page application
+          building single page application-using state managment, using best
+          practices, mvc
         </div>
       </div>
       <div class="adv-container">
         <div class="subtitle">End To End</div>
         <div class="adv">
-          building full scale web apps, frontend and backend, using sql or
-          no-sql date bases
+          building full scale web apps including , using sql or no-sql date
+          bases
+        </div>
+      </div>
+      <div class="adv-container">
+        <div class="subtitle">Dynamic</div>
+        <div class="adv">
+          building the app using dynamic and reusable components and pages
         </div>
       </div>
     </div>
     <div class="flex">
       <img class="profile-img" src="../../assets/profile.jpeg" />
       <div class="info">
+        <h2 class="subtitle">My experience:</h2>
         <div class="desc">
-          Hi, my name is Adi Peled and I am full stack developer,Experienced
-          with building single-page-applications , using advanced web
-          technologies such as Node.js, Vue.js, React and Angular.
+          I have been working as Full Stack developer at Journeez for the past
+          year.
+          <ul>
+            <li>
+              Used Angular as framework to create single page application which
+              can bind data to speipic views and syncromnize data with server
+              using Scss and bootstrap.
+            </li>
+            <li>
+              Leveraged MVC design pattern to organized Angular controller,
+              custom directive and views
+            </li>
+            <li>Designed Node.js apps through Express using typeorm</li>
+            <li>
+              worked closley to clientss to established problems and system
+              designs
+            </li>
+          </ul>
         </div>
-        <!-- <div class="desc">
-        I have a year and a half coding experience, I am graduate of
-        <a href="https://www.coding-academy.org/index.php" target="_blank">
-          Coding Academy</a
-        >.
-     For the past year I have been working  at Journeez
-      </div> -->
+        <div class="desc">
+          I am graduate of
+          <a href="https://www.coding-academy.org/index.php" target="_blank">
+            Coding Academy</a
+          >- an intensive bootcamp that qualifies Full Stuck developers.
+        </div>
         <h3 class="subtitle">skills</h3>
         <div class="skills flex">
           <ul>
