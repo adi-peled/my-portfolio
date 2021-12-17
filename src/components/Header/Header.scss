@@ -17,12 +17,12 @@
     color: inherit;
     transition: 0.6s;
     &:hover {
-      color: $first-color;
+      color: $forth-color;
     }
   }
   .logo {
     path {
-      fill: $second-color;
+      fill: $forth-color;
     }
   }
 
@@ -33,6 +33,6 @@
   }
 
   .active {
-    color: $first-color;
+    color: $forth-color;
   }
 }

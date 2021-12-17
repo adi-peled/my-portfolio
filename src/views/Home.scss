@@ -1,7 +1,27 @@
+@import '../scss/abstracts/variables';
 .main {
-  padding: 0 40px;
+  // padding: 0 40px;
 }
 
 .enteringAnimation {
   animation: slide-in-top 1.5s ease-out;
+}
+
+.projectsList,
+.skills {
+  color: $forth-color;
+}
+.hero,
+.about,
+.contact {
+  background-color: $forth-color;
+  color: $first-color;
+}
+
+.hero,
+.about,
+.contact,
+.projectsList,
+.skills {
+  padding: 80px 40px;
 }

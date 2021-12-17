@@ -6,19 +6,16 @@
     </Observer>
     <main class="main">
       <Observer @on-change="onChange($event, 'projects')" class="test-lazy">
-        <ProjectsList
-          :class="{ enteringAnimation: currSection === 'projects' }"
-        />
+        <ProjectsList />
       </Observer>
       <Observer @on-change="onChange($event, 'about')" class="test-lazy">
-        <About
-          :class="{
-            enteringAnimation: currSection === 'about',
-          }"
-        />
+        <About />
+      </Observer>
+      <Observer @on-change="onChange($event, 'skills')" class="test-lazy">
+        <Skills />
       </Observer>
       <Observer @on-change="onChange($event, 'contact')" class="test-lazy">
-        <Contact :class="{ enteringAnimation: currSection === 'contact' }" />
+        <Contact />
       </Observer>
     </main>
   </div>
@@ -30,6 +27,7 @@ import Header from '../components/Header/Header.vue';
 import Hero from '../components/Hero/Hero.vue';
 import ProjectsList from '../components/ProjectsList/ProjectsList.vue';
 import About from '../components/About/About.vue';
+import Skills from '../components/Skills/Skills.vue';
 import Contact from '../components/Contact/Contact.vue';
 import Observer from 'vue-intersection-observer';
 export default {
@@ -45,6 +43,7 @@ export default {
   methods: {
     onChange(entry, section) {
       if (entry.isIntersecting) {
+        console.log('here', section);
         if (section !== this.currSection) {
           this.currSection = section;
         }
@@ -56,6 +55,7 @@ export default {
     Hero,
     ProjectsList,
     About,
+    Skills,
     Contact,
     Observer,
   },

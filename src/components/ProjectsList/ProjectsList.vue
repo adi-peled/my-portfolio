@@ -1,7 +1,7 @@
 <template>
   <section class="projectsList" id="projects">
     <h2 class="title">Projects</h2>
-    <div class="list wrap">
+    <div class="list wrap justify-center">
       <ProjectPreview
         v-for="project in projects"
         :key="project.id"

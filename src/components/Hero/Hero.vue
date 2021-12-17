@@ -25,11 +25,7 @@ import './Hero.scss';
 export default {
   name: 'Hero',
   mounted() {
-    this.consoleText(
-      ['Hi, my name is Adi', `I am Full Stack Web Developer`],
-      'text',
-      ['#718e8e']
-    );
+    this.consoleText([`I am Full Stack Web Developer`], 'text', ['#99a8a8']);
     this.letterAnimation();
   },
   methods: {

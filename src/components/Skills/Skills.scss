@@ -1,0 +1,21 @@
+@import '../../scss/abstracts/variables';
+.skills {
+  justify-content: space-between;
+  .icon-container {
+    margin-right: 8px;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    // display: flex;
+    li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

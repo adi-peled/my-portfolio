@@ -1,13 +1,13 @@
 <template>
   <div class="projectPreview" @mouseenter="onEnter" @mouseleave="onLeave">
-    <h3 class="title">{{ project.title }}</h3>
+    <h3 class="subtitle">{{ project.title }}</h3>
     <carousel
       :autoplay="true"
       :loop="true"
       :perPage="1"
       :autoplayTimeout="3000"
       paginationColor="#AAA"
-      :speed="1000"
+      :speed="3000"
       :paginationEnabled="false"
     >
       <slide v-for="idx in 3" :key="idx">

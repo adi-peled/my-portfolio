@@ -11,6 +11,7 @@
         >Projects</a
       >
       <a href="#about" :class="{ active: currSection === 'about' }">About</a>
+      <a href="#skills" :class="{ active: currSection === 'skills' }">skills</a>
       <a href="#contact" :class="{ active: currSection === 'contact' }"
         >contact</a
       >

@@ -1,3 +1,4 @@
+//roboto mono
 @font-face {
   font-family: roboto-mono;
   src: url('assets/fonts/roboto-mono/RobotoMono-Bold.ttf');
@@ -20,7 +21,7 @@
   src: url('assets/fonts/roboto-mono/RobotoMono-ExtraLight.ttf');
   font-weight: 200;
 }
-
+//roboto
 @font-face {
   font-family: roboto;
   src: url('assets/fonts/roboto/Roboto-Bold.ttf');
@@ -42,4 +43,39 @@
   font-family: roboto;
   src: url('assets/fonts/roboto/Roboto-Thin.ttf');
   font-weight: 100;
+}
+//rubik
+@font-face {
+  font-family: rubik;
+  src: url('assets/fonts/rubik/Rubik-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: rubik;
+  src: url('assets/fonts/rubik/Rubik-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: rubik;
+  src: url('assets/fonts/rubik/Rubik-Regular.ttf');
+  font-weight: 400;
+}
+//heebo
+@font-face {
+  font-family: heebo;
+  src: url('assets/fonts/heebo/Heebo-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: heebo;
+  src: url('assets/fonts/heebo/Heebo-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: heebo;
+  src: url('assets/fonts/heebo/Heebo-Regular.ttf');
+  font-weight: 400;
 }

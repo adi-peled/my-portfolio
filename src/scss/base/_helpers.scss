@@ -42,7 +42,7 @@
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .col {
@@ -80,6 +80,48 @@
   cursor: pointer;
 }
 
+.brightness {
+  // filter: blur(1px);
+  filter: brightness(50%);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+//big helpers
+.title {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $second-color;
+  @include my-shape;
+  .icon {
+    fill: $first-color;
+  }
+}
+
 .modal {
   display: flex;
   z-index: 100;
@@ -92,38 +134,3 @@
   @include absCenter;
   position: fixed;
 }
-
-.brightness {
-  // filter: blur(1px);
-  filter: brightness(50%);
-}
-
-.title {
-  font-size: 35px;
-  color: $second-color;
-  text-transform: capitalize;
-  font-family: roboto-mono;
-  font-weight: 700;
-  text-align: center;
-}
-
-.subtitle {
-  font-size: 28px;
-  color: $second-color;
-  text-transform: capitalize;
-  font-family: roboto-mono;
-  font-weight: 400;
-  text-align: center;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-// .pointer {
-//   cursor: pointer;
-// }

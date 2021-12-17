@@ -20,6 +20,10 @@
       <div class="icon-container" @click="iconClicked('Github')">
         <Github class="icon" />
       </div>
+      <div class="icon-container phone" @click="iconClicked('Phone')">
+        <Phone class="icon" />
+        <span>055-6699584</span>
+      </div>
     </div>
   </section>
 </template>
@@ -32,6 +36,7 @@ import Whatsapp from '../../assets/social-icons/whatsapp.svg';
 import Phone from '../../assets/social-icons/phone.svg';
 import Email from '../../assets/social-icons/email.svg';
 import Github from '../../assets/social-icons/github.svg';
+
 export default {
   name: 'Contact',
   methods: {
@@ -56,6 +61,9 @@ export default {
         case 'Github':
           window.open('https://github.com/adi-peled');
           break;
+        case 'Phone':
+          window.open('tel:972556699584');
+          break;
       }
     },
   },
@@ -66,6 +74,7 @@ export default {
     Phone,
     Email,
     Github,
+    Phone,
   },
 };
 </script>

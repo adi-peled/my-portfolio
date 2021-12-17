@@ -1,24 +1,39 @@
 @import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
 .projectPreview {
-  padding: 15px;
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
+  margin: 15px;
 
+  .VueCarousel {
+    height: 90%;
+  }
+  .VueCarousel-wrapper,
+  .VueCarousel-inner {
+    height: 100% !important;
+  }
+
+  .subtitle {
+    height: 10%;
+    margin-bottom: 5px;
+  }
   .preview-front {
     position: relative;
-    .title {
-      text-transform: capitalize;
-    }
+    height: 100%;
+
     .proj-img {
+      height: 100%;
+      @include my-shape;
+
       width: 100%;
-      height: 350px;
       object-fit: cover;
     }
   }
 
   .preview-hover {
+    @include my-shape;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     top: 0;
@@ -37,24 +52,25 @@
     .skill {
       padding: 5px;
       margin: 5px;
-      background-color: $first-color;
+      background-color: $second-color;
       text-transform: uppercase;
+      color: $third-color;
     }
 
     .btn-open {
       padding: 10px;
-      background-color: $first-color;
-      color: $third-color;
+      background-color: $third-color;
+      color: $second-color;
       border-radius: 10px;
       cursor: pointer;
-      margin-top: 10px;
+      margin-top: 30px;
       font-size: 20px;
       text-transform: capitalize;
       border: none;
       transition: 0.8s;
       font-weight: 700;
       &:hover {
-        background-color: $second-color;
+        background-color: $forth-color;
       }
     }
   }
