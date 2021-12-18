@@ -20,8 +20,10 @@
       <div class="icon-container" @click="iconClicked('Github')">
         <Github class="icon" />
       </div>
-      <div class="icon-container phone" @click="iconClicked('Phone')">
-        <Phone class="icon" />
+      <div class="phone">
+        <div class="icon-container" @click="iconClicked('Phone')">
+          <Phone class="icon" />
+        </div>
         <span>055-6699584</span>
       </div>
     </div>

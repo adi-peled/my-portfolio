@@ -1,4 +1,5 @@
 @import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
 .skills {
   justify-content: space-between;
   .icon-container {
@@ -8,6 +9,9 @@
   .skills-container {
     display: flex;
     justify-content: space-between;
+    @include respon(phone) {
+      flex-direction: column;
+    }
   }
   ul {
     // display: flex;

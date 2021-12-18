@@ -3,12 +3,18 @@
     <h2 class="title">About</h2>
     <div class="advantages flex">
       <div class="adv-container">
+        <div class="icon-container">
+          <Temp class="icon" />
+        </div>
         <div class="subtitle">Responsive</div>
         <div class="adv">
           layouts fits on any device, phone, tablet or desktop.
         </div>
       </div>
       <div class="adv-container">
+        <div class="icon-container">
+          <Temp class="icon" />
+        </div>
         <div class="subtitle">Latest Technologies</div>
         <div class="adv">
           using the most modren techs languages like JavaScript(ES6) SASS ,
@@ -16,6 +22,9 @@
         </div>
       </div>
       <div class="adv-container">
+        <div class="icon-container">
+          <Temp class="icon" />
+        </div>
         <div class="subtitle">Fast&Organized</div>
         <div class="adv">
           building single page application-using state managment, using best
@@ -23,6 +32,9 @@
         </div>
       </div>
       <div class="adv-container">
+        <div class="icon-container">
+          <Temp class="icon" />
+        </div>
         <div class="subtitle">End To End</div>
         <div class="adv">
           building full scale web apps including , using sql or no-sql date
@@ -30,15 +42,18 @@
         </div>
       </div>
       <div class="adv-container">
+        <div class="icon-container">
+          <Temp class="icon" />
+        </div>
         <div class="subtitle">Dynamic</div>
         <div class="adv">
           building the app using dynamic and reusable components and pages
         </div>
       </div>
     </div>
-    <div class="flex">
-      <div>
-        <img class="profile-img" src="../../assets/profile.jpeg" />
+    <div class="footer">
+      <div class="img-container">
+        <img class="img" src="../../assets/profile.jpeg" />
       </div>
       <div class="info">
         <h2 class="subtitle">My experience:</h2>
@@ -74,9 +89,11 @@
 
 <script>
 import './About.scss';
-
+import Temp from '../../assets/skill-icons/angular.svg';
 export default {
   name: 'About',
-  components: {},
+  components: {
+    Temp,
+  },
 };
 </script>

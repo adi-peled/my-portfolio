@@ -1,5 +1,5 @@
 <template>
-  <section class="skills col" id="Skills">
+  <section class="skills col" id="skills">
     <h3 class="title">skills</h3>
     <div class="skills-container">
       <ul>

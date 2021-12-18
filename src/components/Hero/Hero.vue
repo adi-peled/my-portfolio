@@ -17,11 +17,16 @@
       <span id="text"></span>
       <div class="console-underscore" id="console">&#95;</div>
     </div>
+
+    <a href="#projects" class="btn"
+      ><span>View My Work </span><ArrowRight class="icon"
+    /></a>
   </section>
 </template>
 
 <script>
 import './Hero.scss';
+import ArrowRight from '../../assets/icons/arrow-right.svg';
 export default {
   name: 'Hero',
   mounted() {
@@ -91,6 +96,9 @@ export default {
         }, 750 * (idx + 1));
       });
     },
+  },
+  components: {
+    ArrowRight,
   },
 };
 </script>

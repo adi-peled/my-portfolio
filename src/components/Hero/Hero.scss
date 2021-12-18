@@ -1,13 +1,45 @@
 @import '../../scss/abstracts/variables';
+@import '../../scss/abstracts/mixins';
 .hero {
   height: 60vh;
   padding-top: 100px;
   background-color: $forth-color;
-  // background-image: url('../../assets/bgc.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-image: url('../../assets/bgc1.jpg');
   // background-position: center;
   // background-repeat: no-repeat;
   .title {
     padding: 40px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    // background-color: $third-color;
+    color: $second-color;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid $second-color;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+
+    cursor: pointer;
+    .icon {
+      transition: 0.5s;
+      fill: $second-color;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      background-color: $first-color;
+    }
+    &:hover > .icon {
+      transform: rotate(90deg);
+      // background-color: greenyellow;
+      // margin-top: 70px;
+    }
   }
 
   //animation-1
@@ -22,6 +54,14 @@
     font-size: 100px;
     user-select: none;
     line-height: 0.8;
+
+    @include respon(700px) {
+      font-size: 60px;
+    }
+
+    @include respon(phone) {
+      font-size: 40px;
+    }
   }
 
   .word span:nth-child(1).active,
@@ -69,6 +109,13 @@
   .console-container {
     font-size: 2em;
     text-align: center;
+    @include respon(700px) {
+      font-size: 1.5em;
+    }
+
+    @include respon(phone) {
+      font-size: 1.2em;
+    }
   }
   .console-underscore {
     display: inline-block;
