@@ -1,11 +1,12 @@
 <template>
   <header class="header flex">
     <!-- <img src="../../assets/ADIPELED.png" alt="" /> -->
-    <div class="relative pointer">
-      <Logo class="logo" />
-      <a class="moveHome" href="#home"></a>
+    <div class="relative pointer flex">
+      <!-- <Logo class="logo" /> -->
+      <img class="logo" src="../../assets/logo.png" alt="" />
+      <a class="moveHome" href="#hero"></a>
     </div>
-    <ul class="flex">
+    <ul v-if="!isPhone || showMenu" :style="navStyle">
       <a href="#hero" :class="{ active: currSection === 'hero' }">Home</a>
       <a href="#projects" :class="{ active: currSection === 'projects' }"
         >Projects</a
@@ -16,6 +17,13 @@
         >contact</a
       >
     </ul>
+    <div v-if="isPhone" class="container">
+      <div class="hamburger" @click="toggleMenu">
+        <div class="line1" :style="style1"></div>
+        <div class="line2" :style="style2"></div>
+        <div class="line3" :style="style3"></div>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -30,10 +38,79 @@ export default {
       default: '',
     },
   },
+  data() {
+    return {
+      showMenu: false,
+      style1: {},
+      style2: {},
+      style3: {},
+      isPhone: window.innerWidth <= 600,
+      navStyle: {},
+    };
+  },
+  created() {
+    this.resetStyle();
+    window.addEventListener('resize', () => {
+      this.isPhone = window.innerWidth <= 600;
+    });
+  },
   mounted() {},
   methods: {
     changedSection(section) {
       this.$emit('changedSection', section);
+    },
+    toggleMenu() {
+      if (this.showMenu) {
+        this.resetStyle();
+      } else {
+        this.style1 = {
+          ...this.style1,
+          transform: 'rotate(45deg)',
+        };
+        this.style3 = {
+          ...this.style3,
+          transform: 'rotate(-45deg)',
+        };
+        this.style2 = {
+          opacity: 0,
+        };
+        this.navStyle = {
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          'flex-direction': 'column',
+          top: '55px',
+          height: '100vh',
+          'background-color': '#718e8e',
+        };
+      }
+      this.showMenu = !this.showMenu;
+    },
+    resetStyle() {
+      this.style1 = {
+        height: '3px',
+        'background-color': '#e5eded',
+        '-webkit-transform-origin': 'left',
+        'transform-origin': 'left',
+        transition: 'all 1s ease',
+      };
+      this.style2 = {
+        height: '3px',
+        'background-color': '#e5eded',
+        '-webkit-transform-origin': 'left',
+        'transform-origin': 'left',
+        transition: 'all 1s ease',
+      };
+      this.style3 = {
+        height: '3px',
+        'background-color': '#e5eded',
+        '-webkit-transform-origin': 'left',
+        'transform-origin': 'left',
+        transition: 'all 1s ease',
+      };
+      this.navStyle = {
+        display: 'flex',
+      };
     },
   },
   components: {

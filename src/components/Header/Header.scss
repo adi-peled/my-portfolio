@@ -21,18 +21,30 @@
     }
   }
   .logo {
-    path {
-      fill: $forth-color;
-    }
+    width: 40px;
   }
 
   .moveHome {
     left: 0;
     width: 100%;
+    height: 100%;
     position: absolute;
   }
 
   .active {
     color: $forth-color;
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 15px;
   }
 }

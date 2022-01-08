@@ -13,6 +13,14 @@
       <span>d</span>
     </div>
 
+    <!-- <div class="animate-enter">
+      <div>bring your ideas &nbsp;</div>
+
+      <div>
+        <span> to life</span>
+      </div>
+    </div> -->
+
     <div class="console-container">
       <span id="text"></span>
       <div class="console-underscore" id="console">&#95;</div>
@@ -21,6 +29,7 @@
     <a href="#projects" class="btn"
       ><span>View My Work </span><ArrowRight class="icon"
     /></a>
+    <!-- <img class="img" src="../../assets/bgc1.jpg" alt="" /> -->
   </section>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
   <div class="projectPreview" @mouseenter="onEnter" @mouseleave="onLeave">
     <h3 class="subtitle">{{ project.title }}</h3>
+    <div class="desc">{{ project.desc }}</div>
     <carousel
       :autoplay="true"
       :loop="true"

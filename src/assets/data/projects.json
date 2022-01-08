@@ -2,14 +2,13 @@
     {
         "id": 1,
         "title": "rcrentals",
-        "desc": "Marketplace for car rentals, diffrent users can upload their carsaround the world",
+        "desc": "Marketplace for car rentals,  users can rent cars from others or  upload their cars around the world",
         "skills": [
-            "Vue.js",
+            "Vue",
             "vueX",
             "scss",
             "Node.js",
-            "MongoDB",
-            "Socket.io"
+            "MongoDB"
         ],
         "websiteUrl": "https://rcrentals.herokuapp.com",
         "imgsCount": 3
@@ -47,7 +46,7 @@
     {
         "id": 4,
         "title": "finjan school",
-        "desc": "Looking for fast new way to learn arabic? Here you can find a lot of word games, dictionary, videos and audios to help you.",
+        "desc": "Looking for fun new way to learn arabic? Here you can find a lot of word games, dictionary, videos and audios to help you.",
         "skills": [
             "Vue",
             "Vuex",

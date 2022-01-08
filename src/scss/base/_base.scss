@@ -9,6 +9,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; //1rem=10px
   @include respon(tab-land) {
     font-size: 56.25%; //1rem=9px

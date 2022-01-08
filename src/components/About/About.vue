@@ -4,14 +4,14 @@
     <div class="advantages flex">
       <div class="adv-container">
         <div class="icon-container">
-          <Temp class="icon" />
+          <Responsive class="icon" />
         </div>
         <div class="subtitle">Responsive</div>
         <div class="adv">
-          layouts fits on any device, phone, tablet or desktop.
+          Layouts fits on any device, phone, tablet or desktop.
         </div>
       </div>
-      <div class="adv-container">
+      <!-- <div class="adv-container">
         <div class="icon-container">
           <Temp class="icon" />
         </div>
@@ -20,42 +20,56 @@
           using the most modren techs languages like JavaScript(ES6) SASS ,
           popular frameworks React Angular and Vue
         </div>
-      </div>
+      </div> -->
       <div class="adv-container">
         <div class="icon-container">
-          <Temp class="icon" />
+          <Fast class="icon" />
         </div>
-        <div class="subtitle">Fast&Organized</div>
+        <div class="subtitle">Dynamic</div>
         <div class="adv">
-          building single page application-using state managment, using best
-          practices, mvc
+          Building single page application using state managment, dynamic
+          ,reusable components and pages. Using best practices and MVC pattern.
         </div>
       </div>
       <div class="adv-container">
         <div class="icon-container">
-          <Temp class="icon" />
+          <E2E class="icon" />
         </div>
         <div class="subtitle">End To End</div>
         <div class="adv">
-          building full scale web apps including , using sql or no-sql date
-          bases
+          Building full scale web apps using last modren technologies.
         </div>
       </div>
-      <div class="adv-container">
+      <!-- <div class="adv-container">
         <div class="icon-container">
           <Temp class="icon" />
         </div>
         <div class="subtitle">Dynamic</div>
         <div class="adv">
-          building the app using dynamic and reusable components and pages
+          building  app using dynamic and reusable components and pages
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="footer">
       <div class="img-container">
         <img class="img" src="../../assets/profile.jpeg" />
       </div>
+      <!-- <div class="info">
+      
+        <div class="desc">
+          I am graduate of
+          <span class="bold"> Coding Academy</span>
+          an intensive bootcamp that qualifies Full Stuck developers.
+        </div>
+      </div> -->
+
       <div class="info">
+        <div class="desc">
+          I am Full Stack Web Developer with about 2 years of coding experience.
+          Building single-page-applications using advanced web technologies such
+          as Node.js, Vue.js, React and Angular. I am graduate of Coding
+          Academy- an intensive bootcamp that qualifies web developers
+        </div>
         <h2 class="subtitle">My experience:</h2>
         <div class="desc">
           I have been working as Full Stack developer at Journeez for the past
@@ -63,7 +77,7 @@
           <ul>
             <li>
               Used Angular as framework to create single page application which
-              can bind data to speipic views and syncromnize data with server
+              can bind data to specific views and syncromnize data with server
               using Scss and bootstrap.
             </li>
             <li>
@@ -77,11 +91,6 @@
             </li>
           </ul>
         </div>
-        <div class="desc">
-          I am graduate of
-          <span class="bold"> Coding Academy</span>
-          an intensive bootcamp that qualifies Full Stuck developers.
-        </div>
       </div>
     </div>
   </section>
@@ -90,10 +99,16 @@
 <script>
 import './About.scss';
 import Temp from '../../assets/skill-icons/angular.svg';
+import Fast from '../../assets/icons/rocket.svg';
+import Responsive from '../../assets/icons/display.svg';
+import E2E from '../../assets/icons/fullscreen.svg';
 export default {
   name: 'About',
   components: {
     Temp,
+    Fast,
+    Responsive,
+    E2E,
   },
 };
 </script>

@@ -1,20 +1,20 @@
 <template>
   <div class="home">
     <Header :currSection="currSection" />
-    <Observer @on-change="onChange($event, 'hero')" class="test-lazy">
+    <Observer @on-change="onChange($event, 'hero')">
       <Hero />
     </Observer>
     <main class="main">
-      <Observer @on-change="onChange($event, 'projects')" class="test-lazy">
+      <Observer @on-change="onChange($event, 'projects')">
         <ProjectsList />
       </Observer>
-      <Observer @on-change="onChange($event, 'about')" class="test-lazy">
+      <Observer @on-change="onChange($event, 'about')">
         <About />
       </Observer>
-      <Observer @on-change="onChange($event, 'skills')" class="test-lazy">
+      <Observer @on-change="onChange($event, 'skills')">
         <Skills />
       </Observer>
-      <Observer @on-change="onChange($event, 'contact')" class="test-lazy">
+      <Observer @on-change="onChange($event, 'contact')">
         <Contact />
       </Observer>
     </main>
@@ -43,7 +43,6 @@ export default {
   methods: {
     onChange(entry, section) {
       if (entry.isIntersecting) {
-        console.log('here', section);
         if (section !== this.currSection) {
           this.currSection = section;
         }
