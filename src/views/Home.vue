@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <Header :currSection="currSection" />
+    <Header :currSection="currSection" :isPhone="isPhone" />
     <Observer @on-change="onChange($event, 'hero')">
       <Hero />
     </Observer>
     <main class="main">
       <Observer @on-change="onChange($event, 'projects')">
-        <ProjectsList />
+        <ProjectsList :isPhone="isPhone" />
       </Observer>
       <Observer @on-change="onChange($event, 'about')">
         <About />
@@ -34,10 +34,14 @@ export default {
   name: 'Home',
   created() {
     this.currSection = this.$route.hash.split('#')[1];
+    window.addEventListener('resize', () => {
+      this.isPhone = window.innerWidth <= 600;
+    });
   },
   data() {
     return {
       currSection: 'hero',
+      isPhone: window.innerWidth <= 600,
     };
   },
   methods: {

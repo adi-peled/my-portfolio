@@ -17,6 +17,7 @@ import { projectsService } from '../../services/projectsService';
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
 export default {
   name: 'ProjectsList',
+  // props: ['isPhone'],
   data() {
     return {
       projects: [],

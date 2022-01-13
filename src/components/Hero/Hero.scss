@@ -27,12 +27,16 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
-
+    background-color: darken($forth-color, 3%);
     cursor: pointer;
     .icon {
       transition: 0.5s;
       fill: $second-color;
       margin-left: 8px;
+
+      @include respon(phone) {
+        transform: rotate(90deg);
+      }
     }
 
     &:hover {
@@ -40,8 +44,9 @@
     }
     &:hover > .icon {
       transform: rotate(90deg);
-      // background-color: greenyellow;
-      // margin-top: 70px;
+      @include respon(phone) {
+        transform: rotate(0deg);
+      }
     }
   }
 

@@ -2,6 +2,11 @@
   <div class="projectPreview" @mouseenter="onEnter" @mouseleave="onLeave">
     <h3 class="subtitle">{{ project.title }}</h3>
     <div class="desc">{{ project.desc }}</div>
+    <!-- <div v-if="isPhone" class="skills-container">
+      <div class="skill" v-for="(skill, idx) in project.skills" :key="idx">
+        {{ skill }}
+      </div>
+    </div> -->
     <carousel
       :autoplay="true"
       :loop="true"
@@ -46,6 +51,9 @@ export default {
     project: {
       type: Object,
     },
+    // isPhone: {
+    //   type: Boolean,
+    // },
   },
   data() {
     return {

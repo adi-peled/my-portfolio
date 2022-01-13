@@ -14,10 +14,13 @@
     </div>
 
     <!-- <div class="animate-enter">
-      <div>bring your ideas &nbsp;</div>
+      <div>I am &nbsp;</div>
 
       <div>
-        <span> to life</span>
+        <span> Full Stack </span>
+      </div>
+      <div>
+        <span><span>Web Developer</span></span>
       </div>
     </div> -->
 

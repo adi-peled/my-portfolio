@@ -7,13 +7,34 @@
       <a class="moveHome" href="#hero"></a>
     </div>
     <ul v-if="!isPhone || showMenu" :style="navStyle">
-      <a href="#hero" :class="{ active: currSection === 'hero' }">Home</a>
-      <a href="#projects" :class="{ active: currSection === 'projects' }"
+      <a
+        @click="toggleMenu"
+        href="#hero"
+        :class="{ active: currSection === 'hero' }"
+        >Home</a
+      >
+      <a
+        @click="toggleMenu"
+        href="#projects"
+        :class="{ active: currSection === 'projects' }"
         >Projects</a
       >
-      <a href="#about" :class="{ active: currSection === 'about' }">About</a>
-      <a href="#skills" :class="{ active: currSection === 'skills' }">skills</a>
-      <a href="#contact" :class="{ active: currSection === 'contact' }"
+      <a
+        @click="toggleMenu"
+        href="#about"
+        :class="{ active: currSection === 'about' }"
+        >About</a
+      >
+      <a
+        @click="toggleMenu"
+        href="#skills"
+        :class="{ active: currSection === 'skills' }"
+        >skills</a
+      >
+      <a
+        @click="toggleMenu"
+        href="#contact"
+        :class="{ active: currSection === 'contact' }"
         >contact</a
       >
     </ul>
@@ -37,6 +58,9 @@ export default {
       type: String,
       default: '',
     },
+    isPhone: {
+      type: Boolean,
+    },
   },
   data() {
     return {
@@ -44,15 +68,12 @@ export default {
       style1: {},
       style2: {},
       style3: {},
-      isPhone: window.innerWidth <= 600,
+
       navStyle: {},
     };
   },
   created() {
     this.resetStyle();
-    window.addEventListener('resize', () => {
-      this.isPhone = window.innerWidth <= 600;
-    });
   },
   mounted() {},
   methods: {
@@ -60,6 +81,7 @@ export default {
       this.$emit('changedSection', section);
     },
     toggleMenu() {
+      if (!this.isPhone) return;
       if (this.showMenu) {
         this.resetStyle();
       } else {

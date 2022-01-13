@@ -1,17 +1,18 @@
 [
     {
-        "id": 1,
-        "title": "rcrentals",
-        "desc": "Marketplace for car rentals,  users can rent cars from others or  upload their cars around the world",
+        "id": 3,
+        "title": "jukebox",
+        "desc": "Listen to music with your friends, diffrent rooms allows you to chat and listen to music",
         "skills": [
-            "Vue",
-            "vueX",
+            "React",
+            "Redux",
             "scss",
             "Node.js",
-            "MongoDB"
+            "MongoDB",
+            "Socket.io"
         ],
-        "websiteUrl": "https://rcrentals.herokuapp.com",
-        "imgsCount": 3
+        "websiteUrl": "https://jukebox-ma.herokuapp.com/",
+        "imgsCount": 4
     },
     {
         "id": 2,
@@ -29,19 +30,18 @@
         "imgsCount": 3
     },
     {
-        "id": 3,
-        "title": "jukebox",
-        "desc": "Listen to music with your friends, diffrent rooms allows you to chat and listen to music",
+        "id": 1,
+        "title": "rcrentals",
+        "desc": "Marketplace for car rentals,  users can rent cars from others or  upload their cars around the world",
         "skills": [
-            "React",
-            "Redux",
+            "Vue",
+            "vueX",
             "scss",
             "Node.js",
-            "MongoDB",
-            "Socket.io"
+            "MongoDB"
         ],
-        "websiteUrl": "https://jukebox-ma.herokuapp.com/",
-        "imgsCount": 4
+        "websiteUrl": "https://rcrentals.herokuapp.com",
+        "imgsCount": 3
     },
     {
         "id": 4,

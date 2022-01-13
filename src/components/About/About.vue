@@ -72,8 +72,10 @@
         </div>
         <h2 class="subtitle">My experience:</h2>
         <div class="desc">
-          I have been working as Full Stack developer at Journeez for the past
-          year.
+          <h4 class="subsubtitle">
+            I have been working as Full Stack developer at Journeez for the past
+            year
+          </h4>
           <ul>
             <li>
               Used Angular as framework to create single page application which
