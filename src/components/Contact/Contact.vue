@@ -24,7 +24,7 @@
         <div class="icon-container" @click="iconClicked('Phone')">
           <Phone class="icon" />
         </div>
-        <span>055-6699584</span>
+        <span>055-9805277</span>
       </div>
     </div>
   </section>
@@ -53,7 +53,7 @@ export default {
           );
           break;
         case 'Whatsapp':
-          window.open('https://api.whatsapp.com/send?phone=+972556699584');
+          window.open('https://api.whatsapp.com/send?phone=+972559805277');
           break;
         case 'Facebook':
           window.open(
@@ -64,7 +64,7 @@ export default {
           window.open('https://github.com/adi-peled');
           break;
         case 'Phone':
-          window.open('tel:972556699584');
+          window.open('tel:972559805277');
           break;
       }
     },

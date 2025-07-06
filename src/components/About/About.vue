@@ -65,7 +65,7 @@
 
       <div class="info">
         <div class="desc">
-          I am Full Stack Web Developer with about 2 years of coding experience.
+          I am Full Stack Web Developer with about 4 years of coding experience.
           Building single-page-applications using advanced web technologies such
           as Node.js, Vue.js, React and Angular. I am graduate of Coding
           Academy- an intensive bootcamp that qualifies web developers
