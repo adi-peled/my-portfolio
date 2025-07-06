@@ -1,11 +1,11 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@use 'abstracts/functions' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/variables' as *;
 
-@import 'base/base';
-@import 'base/typography';
-@import 'base/animation';
-@import 'base/helpers';
+@use 'base/base' as *;
+@use 'base/typography' as *;
+@use 'base/animation' as *;
+@use 'base/helpers' as *;
 
 * {
   box-sizing: border-box;

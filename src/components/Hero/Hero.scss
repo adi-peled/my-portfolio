@@ -1,5 +1,6 @@
-@import '../../scss/abstracts/variables';
-@import '../../scss/abstracts/mixins';
+@use 'sass:color';
+@use '../../scss/abstracts/variables' as *;
+@use '../../scss/abstracts/mixins' as *;
 .hero {
   height: 100vh;
   padding-top: 100px;
@@ -27,7 +28,7 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
-    background-color: darken($forth-color, 3%);
+    background-color: color.adjust($forth-color, $lightness: -3%);
     cursor: pointer;
     .icon {
       transition: 0.5s;

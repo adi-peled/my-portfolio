@@ -1,4 +1,4 @@
-@import '../../scss/abstracts/variables';
+@use '../../scss/abstracts/variables' as *;
 
 .header {
   padding: 0 20px;

@@ -1,4 +1,5 @@
-@import './scss/main.scss';
+@use './scss/abstracts/variables' as *;
+@use './scss/main.scss' as *;
 
 body {
   background-color: $first-color;
